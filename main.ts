@@ -42,7 +42,7 @@ import {
 import {BrowserModule} from '@angular/platform-browser';
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {SnackBarComponentExample, PizzaPartyComponent} from './app/snack-bar-component-example';
+import {SnackBarComponentExample, PizzaPartyComponent, notifyComponents, successNotifyComponent } from './app/snack-bar-component-example';
 
 @NgModule({
   exports: [
@@ -95,9 +95,13 @@ export class DemoMaterialModule {}
     ReactiveFormsModule,
   ],
   
-  entryComponents: [SnackBarComponentExample, PizzaPartyComponent],
+  entryComponents: [SnackBarComponentExample, PizzaPartyComponent,
+  notifyComponents,
+  successNotifyComponent],
 
-  declarations: [SnackBarComponentExample, PizzaPartyComponent],
+  declarations: [SnackBarComponentExample, PizzaPartyComponent,
+  notifyComponents,
+  successNotifyComponent],
   
   bootstrap: [SnackBarComponentExample],
   providers: []

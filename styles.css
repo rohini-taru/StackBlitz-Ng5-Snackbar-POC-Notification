@@ -13,3 +13,19 @@ body {
   font-size: 8pt;
   float: right;
 }
+
+.mat-snack-bar-container {
+  background: #d0d0d0;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.cdk-overlay-container {
+    position: fixed;
+    z-index: 1000;
+    top: -30px;
+    left: calc(100vw / 5);
+    width: calc(100vw / 5);
+    text-align: center;
+}
